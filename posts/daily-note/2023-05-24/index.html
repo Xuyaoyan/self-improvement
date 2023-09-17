@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="任务 Omnifocus 间歇日记 10:58 [[Java]] [[MyBatis]] 快速入门 创建模块，导入坐标 -&gt; 这里指的是创建Maven项目模板 项目模板中的坐标指的是什么呢？ 编写mybatis核心配置文件 -&gt; 替换连接信息，解决硬编码问题 编写SQL映射文件 -&gt; 统一管理sql语句，解决硬编码问题 什么是SQL映射文件？ 感觉像是和xml文件类似，把sql语句放到程序外部读取 编码 定义POJO类 这个类是干什么的？ 应该就是简化JDBC操作的类 错了，这个类是自己定义的，用来存放用户对象 加载核心配置文件，获取SqlSessionFactory对象 这个对象是干什么的？ 应该和数据库的连接有关系 获取SqlSession对象，执行SQL语句 SqlSession又是干什么的？ 应该和SqlSessionFactory有关，可能是它的子类 释放资源 这一步操作是如何简化的？或者说干脆没有简化？ 应该是会把释放连接的代码封装起来 Mapper代理开发 定义接口，映射文件和接口放在同一目录下 设置namespace属性为全限定名 在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值 什么叫保持参数类型和返回值 什么叫sql语句的id 编码 通过SqlSession的getMapper方法获取Mapper接口的代理对象 调用对象方法完成sql执行 包扫描的方式可以更方便的加载sql映射文件 练习：查询所有数据 写Mapper接口 编写SQL语句，写SQL映射文件 执行方法，测试 问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？ 可以查询的时候写上别名 select 变量名 as 别名 可以mapper.xml中设置一个sql标签 resultMap可以灵活地解决这个问题 就是用数据名标映射变量名 再将标签引入statement中 并且可以用resultMap替换resultType 因为resultMap中有type这个属性 练习：查询详情 返回一个对象 所以通过id查找 参数占位符 #{}: 会替换成?，防止sql注入，用于参数传递 ${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况 特殊字符 比如需要判断id &lt; 或 id &gt;，xml并不能识别，因为和标签的符号重合 使用CDATA 练习：多条件查询 第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应 第二种方法：直接在对象当中找相应的变量 但是要求sql中的占位符名称和变量名相同 第三种方法：封装成Map集合的键名 同理sql中的占位符和键名应该相同 练习：动态条件查询 问题，多条件查询只能同时满足多条件才能查询 解决方案1：使用&lt;if&gt;标签来实现 问题，必须满足第一个条件 解决方案2：第一个条件设置为1 = 1满足语法条件，同时其它均为and连接 解决方案3：直接用&lt;where&gt;标签里面放&lt;if&gt;标签，会自动帮你填写1=1，自动帮你删去and 练习：单条件动态查询 使用&lt;choose&gt;标签, 配合&lt;when&gt;标签实现分支选择，必须要有&lt;otherwise&gt;来设置默认值 练习：添加 放在&lt;insert&gt;标签中 问题，如何实现事务 sqlSession.">
+    <meta name="generator" content="Hugo 0.118.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="任务 Omnifocus 间歇日记 10:58 [[Java]] [[MyBatis]] 快速入门 创建模块，导入坐标 -&gt; 这里指的是创建Maven项目模板 项目模板中的坐标指的是什么呢？ 编写mybatis核心配置文件 -&gt; 替换连接信息，解决硬编码问题 编写SQL映射文件 -&gt; 统一管理sql语句，解决硬编码问题 什么是SQL映射文件？ 感觉像是和xml文件类似，把sql语句放到程序外部读取 编码 定义POJO类 这个类是干什么的？ 应该就是简化JDBC操作的类 错了，这个类是自己定义的，用来存放用户对象 加载核心配置文件，获取SqlSessionFactory对象 这个对象是干什么的？ 应该和数据库的连接有关系 获取SqlSession对象，执行SQL语句 SqlSession又是干什么的？ 应该和SqlSessionFactory有关，可能是它的子类 释放资源 这一步操作是如何简化的？或者说干脆没有简化？ 应该是会把释放连接的代码封装起来 Mapper代理开发 定义接口，映射文件和接口放在同一目录下 设置namespace属性为全限定名 在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值 什么叫保持参数类型和返回值 什么叫sql语句的id 编码 通过SqlSession的getMapper方法获取Mapper接口的代理对象 调用对象方法完成sql执行 包扫描的方式可以更方便的加载sql映射文件 练习：查询所有数据 写Mapper接口 编写SQL语句，写SQL映射文件 执行方法，测试 问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？ 可以查询的时候写上别名 select 变量名 as 别名 可以mapper.xml中设置一个sql标签 resultMap可以灵活地解决这个问题 就是用数据名标映射变量名 再将标签引入statement中 并且可以用resultMap替换resultType 因为resultMap中有type这个属性 练习：查询详情 返回一个对象 所以通过id查找 参数占位符 #{}: 会替换成?，防止sql注入，用于参数传递 ${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况 特殊字符 比如需要判断id &lt; 或 id &gt;，xml并不能识别，因为和标签的符号重合 使用CDATA 练习：多条件查询 第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应 第二种方法：直接在对象当中找相应的变量 但是要求sql中的占位符名称和变量名相同 第三种方法：封装成Map集合的键名 同理sql中的占位符和键名应该相同 练习：动态条件查询 问题，多条件查询只能同时满足多条件才能查询 解决方案1：使用&lt;if&gt;标签来实现 问题，必须满足第一个条件 解决方案2：第一个条件设置为1 = 1满足语法条件，同时其它均为and连接 解决方案3：直接用&lt;where&gt;标签里面放&lt;if&gt;标签，会自动帮你填写1=1，自动帮你删去and 练习：单条件动态查询 使用&lt;choose&gt;标签, 配合&lt;when&gt;标签实现分支选择，必须要有&lt;otherwise&gt;来设置默认值 练习：添加 放在&lt;insert&gt;标签中 问题，如何实现事务 sqlSession." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/daily-note/2023-05-24/" /><meta property="article:section" content="posts" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="任务 Omnifocus 间歇日记 10:58 [[Java]] [[MyBatis]] 快速入门 创建模块，导入坐标 -&gt; 这里指的是创建Maven项目模板 项目模板中的坐标指的是什么呢？ 编写mybatis核心配置文件 -&gt; 替换连接信息，解决硬编码问题 编写SQL映射文件 -&gt; 统一管理sql语句，解决硬编码问题 什么是SQL映射文件？ 感觉像是和xml文件类似，把sql语句放到程序外部读取 编码 定义POJO类 这个类是干什么的？ 应该就是简化JDBC操作的类 错了，这个类是自己定义的，用来存放用户对象 加载核心配置文件，获取SqlSessionFactory对象 这个对象是干什么的？ 应该和数据库的连接有关系 获取SqlSession对象，执行SQL语句 SqlSession又是干什么的？ 应该和SqlSessionFactory有关，可能是它的子类 释放资源 这一步操作是如何简化的？或者说干脆没有简化？ 应该是会把释放连接的代码封装起来 Mapper代理开发 定义接口，映射文件和接口放在同一目录下 设置namespace属性为全限定名 在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值 什么叫保持参数类型和返回值 什么叫sql语句的id 编码 通过SqlSession的getMapper方法获取Mapper接口的代理对象 调用对象方法完成sql执行 包扫描的方式可以更方便的加载sql映射文件 练习：查询所有数据 写Mapper接口 编写SQL语句，写SQL映射文件 执行方法，测试 问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？ 可以查询的时候写上别名 select 变量名 as 别名 可以mapper.xml中设置一个sql标签 resultMap可以灵活地解决这个问题 就是用数据名标映射变量名 再将标签引入statement中 并且可以用resultMap替换resultType 因为resultMap中有type这个属性 练习：查询详情 返回一个对象 所以通过id查找 参数占位符 #{}: 会替换成?，防止sql注入，用于参数传递 ${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况 特殊字符 比如需要判断id &lt; 或 id &gt;，xml并不能识别，因为和标签的符号重合 使用CDATA 练习：多条件查询 第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应 第二种方法：直接在对象当中找相应的变量 但是要求sql中的占位符名称和变量名相同 第三种方法：封装成Map集合的键名 同理sql中的占位符和键名应该相同 练习：动态条件查询 问题，多条件查询只能同时满足多条件才能查询 解决方案1：使用&lt;if&gt;标签来实现 问题，必须满足第一个条件 解决方案2：第一个条件设置为1 = 1满足语法条件，同时其它均为and连接 解决方案3：直接用&lt;where&gt;标签里面放&lt;if&gt;标签，会自动帮你填写1=1，自动帮你删去and 练习：单条件动态查询 使用&lt;choose&gt;标签, 配合&lt;when&gt;标签实现分支选择，必须要有&lt;otherwise&gt;来设置默认值 练习：添加 放在&lt;insert&gt;标签中 问题，如何实现事务 sqlSession.">
+
+<meta itemprop="wordCount" content="145">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="任务 Omnifocus 间歇日记 10:58 [[Java]] [[MyBatis]] 快速入门 创建模块，导入坐标 -&gt; 这里指的是创建Maven项目模板 项目模板中的坐标指的是什么呢？ 编写mybatis核心配置文件 -&gt; 替换连接信息，解决硬编码问题 编写SQL映射文件 -&gt; 统一管理sql语句，解决硬编码问题 什么是SQL映射文件？ 感觉像是和xml文件类似，把sql语句放到程序外部读取 编码 定义POJO类 这个类是干什么的？ 应该就是简化JDBC操作的类 错了，这个类是自己定义的，用来存放用户对象 加载核心配置文件，获取SqlSessionFactory对象 这个对象是干什么的？ 应该和数据库的连接有关系 获取SqlSession对象，执行SQL语句 SqlSession又是干什么的？ 应该和SqlSessionFactory有关，可能是它的子类 释放资源 这一步操作是如何简化的？或者说干脆没有简化？ 应该是会把释放连接的代码封装起来 Mapper代理开发 定义接口，映射文件和接口放在同一目录下 设置namespace属性为全限定名 在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值 什么叫保持参数类型和返回值 什么叫sql语句的id 编码 通过SqlSession的getMapper方法获取Mapper接口的代理对象 调用对象方法完成sql执行 包扫描的方式可以更方便的加载sql映射文件 练习：查询所有数据 写Mapper接口 编写SQL语句，写SQL映射文件 执行方法，测试 问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？ 可以查询的时候写上别名 select 变量名 as 别名 可以mapper.xml中设置一个sql标签 resultMap可以灵活地解决这个问题 就是用数据名标映射变量名 再将标签引入statement中 并且可以用resultMap替换resultType 因为resultMap中有type这个属性 练习：查询详情 返回一个对象 所以通过id查找 参数占位符 #{}: 会替换成?，防止sql注入，用于参数传递 ${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况 特殊字符 比如需要判断id &lt; 或 id &gt;，xml并不能识别，因为和标签的符号重合 使用CDATA 练习：多条件查询 第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应 第二种方法：直接在对象当中找相应的变量 但是要求sql中的占位符名称和变量名相同 第三种方法：封装成Map集合的键名 同理sql中的占位符和键名应该相同 练习：动态条件查询 问题，多条件查询只能同时满足多条件才能查询 解决方案1：使用&lt;if&gt;标签来实现 问题，必须满足第一个条件 解决方案2：第一个条件设置为1 = 1满足语法条件，同时其它均为and连接 解决方案3：直接用&lt;where&gt;标签里面放&lt;if&gt;标签，会自动帮你填写1=1，自动帮你删去and 练习：单条件动态查询 使用&lt;choose&gt;标签, 配合&lt;when&gt;标签实现分支选择，必须要有&lt;otherwise&gt;来设置默认值 练习：添加 放在&lt;insert&gt;标签中 问题，如何实现事务 sqlSession."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="任务">任务</h1>
+<ul>
+<li>Omnifocus</li>
+</ul>
+<h1 id="间歇日记">间歇日记</h1>
+<ul>
+<li>10:58
+<ul>
+<li>[[Java]]
+<ul>
+<li>[[MyBatis]]
+<ul>
+<li>快速入门
+<ul>
+<li>创建模块，导入坐标 -&gt; <em>这里指的是创建Maven项目模板</em>
+<ul>
+<li><em>项目模板中的坐标指的是什么呢？</em></li>
+</ul>
+</li>
+<li>编写mybatis核心配置文件 -&gt; 替换连接信息，解决硬编码问题</li>
+<li>编写SQL映射文件 -&gt; 统一管理sql语句，解决硬编码问题
+<ul>
+<li>什么是SQL映射文件？ <em>感觉像是和xml文件类似，把sql语句放到程序外部读取</em></li>
+</ul>
+</li>
+<li>编码
+<ul>
+<li>定义POJO类
+<ul>
+<li>这个类是干什么的？ <em>应该就是简化JDBC操作的类</em>
+<ul>
+<li><strong>错了，这个类是自己定义的，用来存放用户对象</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>加载核心配置文件，获取SqlSessionFactory对象
+<ul>
+<li>这个对象是干什么的？ <em>应该和数据库的连接有关系</em></li>
+</ul>
+</li>
+<li>获取SqlSession对象，执行SQL语句
+<ul>
+<li>SqlSession又是干什么的？ <em>应该和SqlSessionFactory有关，可能是它的子类</em></li>
+</ul>
+</li>
+<li>释放资源
+<ul>
+<li>这一步操作是如何简化的？或者说干脆没有简化？ <em>应该是会把释放连接的代码封装起来</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mapper代理开发
+<ul>
+<li>定义接口，映射文件和接口放在同一目录下</li>
+<li>设置namespace属性为全限定名</li>
+<li>在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值
+<ul>
+<li><em>什么叫保持参数类型和返回值</em></li>
+<li><em>什么叫sql语句的id</em></li>
+</ul>
+</li>
+<li>编码
+<ul>
+<li>通过SqlSession的getMapper方法获取Mapper接口的代理对象</li>
+<li>调用对象方法完成sql执行</li>
+</ul>
+</li>
+<li><em>包扫描的方式可以更方便的加载sql映射文件</em></li>
+</ul>
+</li>
+<li>练习：查询所有数据
+<ul>
+<li>写Mapper接口</li>
+<li>编写SQL语句，写SQL映射文件</li>
+<li>执行方法，测试
+<ul>
+<li><em>问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？</em>
+<ul>
+<li>可以查询的时候写上别名
+<ul>
+<li>select 变量名 as 别名</li>
+</ul>
+</li>
+<li>可以mapper.xml中设置一个sql标签</li>
+<li>resultMap可以灵活地解决这个问题
+<ul>
+<li>就是用数据名标映射变量名</li>
+<li>再将标签引入statement中</li>
+<li>并且可以用resultMap替换resultType
+<ul>
+<li>因为resultMap中有type这个属性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>练习：查询详情
+<ul>
+<li>返回一个对象</li>
+<li>所以通过id查找
+<ul>
+<li>参数占位符
+<ul>
+<li>
+<ol>
+<li>#{}: 会替换成?，防止sql注入，用于参数传递</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>特殊字符
+<ul>
+<li>比如需要判断id &lt; 或 id &gt;，xml并不能识别，因为和标签的符号重合</li>
+<li>使用CDATA
+<ul>
+<li>
+<!-- raw HTML omitted -->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>练习：多条件查询
+<ul>
+<li>第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应</li>
+<li>第二种方法：直接在对象当中找相应的变量
+<ul>
+<li>但是要求sql中的占位符名称和变量名相同</li>
+</ul>
+</li>
+<li>第三种方法：封装成Map集合的键名
+<ul>
+<li>同理sql中的占位符和键名应该相同</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>练习：动态条件查询
+<ul>
+<li><em>问题，多条件查询只能同时满足多条件才能查询</em></li>
+<li>解决方案1：使用<code>&lt;if&gt;</code>标签来实现
+<ul>
+<li><em>问题，必须满足第一个条件</em></li>
+</ul>
+</li>
+<li>解决方案2：第一个条件设置为<code>1 = 1</code>满足语法条件，同时其它均为and连接</li>
+<li>解决方案3：直接用<code>&lt;where&gt;</code>标签里面放<code>&lt;if&gt;</code>标签，会自动帮你填写1=1，自动帮你删去and</li>
+</ul>
+</li>
+<li>练习：单条件动态查询
+<ul>
+<li>使用<code>&lt;choose&gt;</code>标签, 配合<code>&lt;when&gt;</code>标签实现分支选择，必须要有<code>&lt;otherwise&gt;</code>来设置默认值</li>
+</ul>
+</li>
+<li>练习：添加
+<ul>
+<li>放在<code>&lt;insert&gt;</code>标签中</li>
+<li><em>问题，如何实现事务</em>
+<ul>
+<li>sqlSession.commit()</li>
+<li>或者在实现对象的时候填入true
+<ul>
+<li>Sqlsession sqlSession = sqlSessionFactory.openSession(autocommit:true)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>问题，如何返回主键</em>
+<ul>
+<li>在<code>&lt;insert&gt;</code>标签中添加<code>useGeneratedKeys = &quot;true&quot; keyProperty = &quot;id&quot;</code> 这里的id指你设置的主键名称</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>练习：修改
+<ul>
+<li>放在<code>&lt;update&gt;</code>标签中</li>
+<li><em>问题，如何动态修改</em>
+<ul>
+<li>同动态查询
+<ul>
+<li>把set变为标签，同时使用if标签进行条件判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>练习：删除
+<ul>
+<li>放在<code>&lt;delete&gt;</code>标签中</li>
+<li><em>问题，如何删除多个</em>
+<ul>
+<li>方法设置注解，对应一个id数组</li>
+<li>xml中使用<code>&lt;foreach&gt;</code>来遍历id
+<ul>
+<li>其中open和close用来为首尾添加字符，如open = &ldquo;(&rdquo;, close = &ldquo;)&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>练习：注解开发
+<ul>
+<li>使用@Select 注解可以简化开发，不需要配合xml，但是不适合复杂的sql逻辑，可以用来写点简单的代码</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="复盘">复盘</h1>
+<ul>
+<li>今天干了些什么? 是怎么去干的? 有没有能优化的地方?
+<ul>
+<li>学了MyBatis的使用方法</li>
+<li>在学校教室看视频</li>
+<li>有，其实有些内容可以看文档解决</li>
+</ul>
+</li>
+<li>这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好?</li>
+<li>把事情分为可控, 半可控, 不可控, 分析原因总结规律</li>
+<li>形成文档</li>
+<li>PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯）</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  My New Hugo Site 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

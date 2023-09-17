@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="任务 Omnifocus 间歇日记 15:26 [[Java]] [[Tomcat]] HTTP请求格式 ![[Pasted image 20230525152909.png]] 请求行 GET/HTTP/1.1 请求方式，/表示请求资源路径, HTTP/1.1表示请求协议版本 请求头：第二行开始，格式为key:value 请求体：POST请求的最后一部分，存放请求参数 GET请求的请求参数放在请求行中，而POST的放在请求体中 GET请求参数大小有限制，而POST没有 问题，是不是因为请求行有限制而请求体没有 HTTP响应格式 ![[Pasted image 20230525155502.png]] 响应行 响应数据的第一行 HTTP/1.1 200 OK HTTP/1.1表示协议版本，200 表示响应态码，OK表示状态码描述 响应头 第二行开始，格式为key:value 响应体 最后一部分，存放响应数据 状态码分类 1xx,2xx,3xx,4xx,5xx Servlet生命周期 ![[Pasted image 20230525180000.png]] @WebServlet loadOnStartup属性 负整数：第一次访问才创建Servlet对象 0或正整数：服务器启动就创建对象，数字越小优先级越高 init方法，只有才初始化对象的时候被调用 &hellip; HTTPServlet ![[Pasted image 20230525181124.png]] 开发B/S架构都针对HTTP协议，所以直接继承HTTPServlet就行 根据请求方式的不同重写doGet和doPost方法 可以封装成service方法，在方法中判断请求方式，再进行相应的逻辑处理 Servlet urlPattern配置 ![[Pasted image 20230525182407.png]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） ">
+    <meta name="generator" content="Hugo 0.118.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="任务 Omnifocus 间歇日记 15:26 [[Java]] [[Tomcat]] HTTP请求格式 ![[Pasted image 20230525152909.png]] 请求行 GET/HTTP/1.1 请求方式，/表示请求资源路径, HTTP/1.1表示请求协议版本 请求头：第二行开始，格式为key:value 请求体：POST请求的最后一部分，存放请求参数 GET请求的请求参数放在请求行中，而POST的放在请求体中 GET请求参数大小有限制，而POST没有 问题，是不是因为请求行有限制而请求体没有 HTTP响应格式 ![[Pasted image 20230525155502.png]] 响应行 响应数据的第一行 HTTP/1.1 200 OK HTTP/1.1表示协议版本，200 表示响应态码，OK表示状态码描述 响应头 第二行开始，格式为key:value 响应体 最后一部分，存放响应数据 状态码分类 1xx,2xx,3xx,4xx,5xx Servlet生命周期 ![[Pasted image 20230525180000.png]] @WebServlet loadOnStartup属性 负整数：第一次访问才创建Servlet对象 0或正整数：服务器启动就创建对象，数字越小优先级越高 init方法，只有才初始化对象的时候被调用 &hellip; HTTPServlet ![[Pasted image 20230525181124.png]] 开发B/S架构都针对HTTP协议，所以直接继承HTTPServlet就行 根据请求方式的不同重写doGet和doPost方法 可以封装成service方法，在方法中判断请求方式，再进行相应的逻辑处理 Servlet urlPattern配置 ![[Pasted image 20230525182407.png]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/daily-note/2023-05-25/" /><meta property="article:section" content="posts" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="任务 Omnifocus 间歇日记 15:26 [[Java]] [[Tomcat]] HTTP请求格式 ![[Pasted image 20230525152909.png]] 请求行 GET/HTTP/1.1 请求方式，/表示请求资源路径, HTTP/1.1表示请求协议版本 请求头：第二行开始，格式为key:value 请求体：POST请求的最后一部分，存放请求参数 GET请求的请求参数放在请求行中，而POST的放在请求体中 GET请求参数大小有限制，而POST没有 问题，是不是因为请求行有限制而请求体没有 HTTP响应格式 ![[Pasted image 20230525155502.png]] 响应行 响应数据的第一行 HTTP/1.1 200 OK HTTP/1.1表示协议版本，200 表示响应态码，OK表示状态码描述 响应头 第二行开始，格式为key:value 响应体 最后一部分，存放响应数据 状态码分类 1xx,2xx,3xx,4xx,5xx Servlet生命周期 ![[Pasted image 20230525180000.png]] @WebServlet loadOnStartup属性 负整数：第一次访问才创建Servlet对象 0或正整数：服务器启动就创建对象，数字越小优先级越高 init方法，只有才初始化对象的时候被调用 &hellip; HTTPServlet ![[Pasted image 20230525181124.png]] 开发B/S架构都针对HTTP协议，所以直接继承HTTPServlet就行 根据请求方式的不同重写doGet和doPost方法 可以封装成service方法，在方法中判断请求方式，再进行相应的逻辑处理 Servlet urlPattern配置 ![[Pasted image 20230525182407.png]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） ">
+
+<meta itemprop="wordCount" content="71">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="任务 Omnifocus 间歇日记 15:26 [[Java]] [[Tomcat]] HTTP请求格式 ![[Pasted image 20230525152909.png]] 请求行 GET/HTTP/1.1 请求方式，/表示请求资源路径, HTTP/1.1表示请求协议版本 请求头：第二行开始，格式为key:value 请求体：POST请求的最后一部分，存放请求参数 GET请求的请求参数放在请求行中，而POST的放在请求体中 GET请求参数大小有限制，而POST没有 问题，是不是因为请求行有限制而请求体没有 HTTP响应格式 ![[Pasted image 20230525155502.png]] 响应行 响应数据的第一行 HTTP/1.1 200 OK HTTP/1.1表示协议版本，200 表示响应态码，OK表示状态码描述 响应头 第二行开始，格式为key:value 响应体 最后一部分，存放响应数据 状态码分类 1xx,2xx,3xx,4xx,5xx Servlet生命周期 ![[Pasted image 20230525180000.png]] @WebServlet loadOnStartup属性 负整数：第一次访问才创建Servlet对象 0或正整数：服务器启动就创建对象，数字越小优先级越高 init方法，只有才初始化对象的时候被调用 &hellip; HTTPServlet ![[Pasted image 20230525181124.png]] 开发B/S架构都针对HTTP协议，所以直接继承HTTPServlet就行 根据请求方式的不同重写doGet和doPost方法 可以封装成service方法，在方法中判断请求方式，再进行相应的逻辑处理 Servlet urlPattern配置 ![[Pasted image 20230525182407.png]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） "/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="任务">任务</h1>
+<ul>
+<li>Omnifocus</li>
+</ul>
+<h1 id="间歇日记">间歇日记</h1>
+<ul>
+<li>15:26
+<ul>
+<li>[[Java]]
+<ul>
+<li>[[Tomcat]]
+<ul>
+<li>HTTP请求格式
+<ul>
+<li>![[Pasted image 20230525152909.png]]</li>
+<li>请求行
+<ul>
+<li>GET/HTTP/1.1</li>
+<li>请求方式，/表示请求资源路径, HTTP/1.1表示请求协议版本</li>
+</ul>
+</li>
+<li>请求头：第二行开始，格式为key:value</li>
+<li>请求体：POST请求的最后一部分，存放请求参数</li>
+<li>GET请求的请求参数放在请求行中，而POST的放在请求体中</li>
+<li>GET请求参数大小有限制，而POST没有
+<ul>
+<li><em>问题，是不是因为请求行有限制而请求体没有</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HTTP响应格式
+<ul>
+<li>![[Pasted image 20230525155502.png]]</li>
+<li>响应行
+<ul>
+<li>响应数据的第一行 HTTP/1.1 200 OK</li>
+<li>HTTP/1.1表示协议版本，200 表示响应态码，OK表示状态码描述</li>
+</ul>
+</li>
+<li>响应头
+<ul>
+<li>第二行开始，格式为key:value</li>
+</ul>
+</li>
+<li>响应体
+<ul>
+<li>最后一部分，存放响应数据</li>
+</ul>
+</li>
+<li>状态码分类
+<ul>
+<li>1xx,2xx,3xx,4xx,5xx</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Servlet生命周期
+<ul>
+<li>![[Pasted image 20230525180000.png]]</li>
+<li>@WebServlet
+<ul>
+<li>loadOnStartup属性
+<ul>
+<li>负整数：第一次访问才创建Servlet对象</li>
+<li>0或正整数：服务器启动就创建对象，数字越小优先级越高</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>init方法，只有才初始化对象的时候被调用</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>HTTPServlet
+<ul>
+<li>![[Pasted image 20230525181124.png]]</li>
+<li>开发B/S架构都针对HTTP协议，所以直接继承HTTPServlet就行</li>
+<li>根据请求方式的不同重写doGet和doPost方法
+<ul>
+<li>可以封装成service方法，在方法中判断请求方式，再进行相应的逻辑处理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Servlet urlPattern配置
+<ul>
+<li>![[Pasted image 20230525182407.png]]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="复盘">复盘</h1>
+<ul>
+<li>今天干了些什么? 是怎么去干的? 有没有能优化的地方?</li>
+<li>这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好?</li>
+<li>把事情分为可控, 半可控, 不可控, 分析原因总结规律</li>
+<li>形成文档</li>
+<li>PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯）</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  My New Hugo Site 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

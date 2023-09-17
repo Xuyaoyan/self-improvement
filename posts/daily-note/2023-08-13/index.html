@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="任务 Omnifocus 间歇日记 15:27 [[汇编语言]] 总结 我需要总结哪些内容？ 计算机的组成，重点是CPU和其他设备的交互以及存储问题，如逻辑存储器，为什么会分段等 内存总线和地址总线，如何判断内存空间大小，和寻址空间有什么关系 了解寄存器和数据存储的方式，如寄存器是如何存储数据的，如何判断是内存还是数据，是从地址高位开始存储还是地位开始，寄存器的大小是多少 mov和add指令的作用 物理地址的表示方法，内存分段的方法和作用 Debug的使用，了解常用命令 CS:IP在代码段中的作用 jmp指令的作用 内存中字的存储 DS和[address] 栈的原理和对应的操作 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） ">
+    <meta name="generator" content="Hugo 0.118.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="任务 Omnifocus 间歇日记 15:27 [[汇编语言]] 总结 我需要总结哪些内容？ 计算机的组成，重点是CPU和其他设备的交互以及存储问题，如逻辑存储器，为什么会分段等 内存总线和地址总线，如何判断内存空间大小，和寻址空间有什么关系 了解寄存器和数据存储的方式，如寄存器是如何存储数据的，如何判断是内存还是数据，是从地址高位开始存储还是地位开始，寄存器的大小是多少 mov和add指令的作用 物理地址的表示方法，内存分段的方法和作用 Debug的使用，了解常用命令 CS:IP在代码段中的作用 jmp指令的作用 内存中字的存储 DS和[address] 栈的原理和对应的操作 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/daily-note/2023-08-13/" /><meta property="article:section" content="posts" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="任务 Omnifocus 间歇日记 15:27 [[汇编语言]] 总结 我需要总结哪些内容？ 计算机的组成，重点是CPU和其他设备的交互以及存储问题，如逻辑存储器，为什么会分段等 内存总线和地址总线，如何判断内存空间大小，和寻址空间有什么关系 了解寄存器和数据存储的方式，如寄存器是如何存储数据的，如何判断是内存还是数据，是从地址高位开始存储还是地位开始，寄存器的大小是多少 mov和add指令的作用 物理地址的表示方法，内存分段的方法和作用 Debug的使用，了解常用命令 CS:IP在代码段中的作用 jmp指令的作用 内存中字的存储 DS和[address] 栈的原理和对应的操作 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） ">
+
+<meta itemprop="wordCount" content="31">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="任务 Omnifocus 间歇日记 15:27 [[汇编语言]] 总结 我需要总结哪些内容？ 计算机的组成，重点是CPU和其他设备的交互以及存储问题，如逻辑存储器，为什么会分段等 内存总线和地址总线，如何判断内存空间大小，和寻址空间有什么关系 了解寄存器和数据存储的方式，如寄存器是如何存储数据的，如何判断是内存还是数据，是从地址高位开始存储还是地位开始，寄存器的大小是多少 mov和add指令的作用 物理地址的表示方法，内存分段的方法和作用 Debug的使用，了解常用命令 CS:IP在代码段中的作用 jmp指令的作用 内存中字的存储 DS和[address] 栈的原理和对应的操作 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯） "/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="任务">任务</h1>
+<ul>
+<li>Omnifocus</li>
+</ul>
+<h1 id="间歇日记">间歇日记</h1>
+<ul>
+<li>15:27
+<ul>
+<li>[[汇编语言]]
+<ul>
+<li>总结
+<ul>
+<li>我需要总结哪些内容？
+<ul>
+<li>计算机的组成，重点是CPU和其他设备的交互以及存储问题，如逻辑存储器，为什么会分段等</li>
+<li>内存总线和地址总线，如何判断内存空间大小，和寻址空间有什么关系</li>
+<li>了解寄存器和数据存储的方式，如寄存器是如何存储数据的，如何判断是内存还是数据，是从地址高位开始存储还是地位开始，寄存器的大小是多少</li>
+<li>mov和add指令的作用</li>
+<li>物理地址的表示方法，内存分段的方法和作用</li>
+<li>Debug的使用，了解常用命令</li>
+<li>CS:IP在代码段中的作用</li>
+<li>jmp指令的作用</li>
+<li>内存中字的存储</li>
+<li>DS和<code>[address]</code></li>
+<li>栈的原理和对应的操作</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="复盘">复盘</h1>
+<ul>
+<li>今天干了些什么? 是怎么去干的? 有没有能优化的地方?</li>
+<li>这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好?</li>
+<li>把事情分为可控, 半可控, 不可控, 分析原因总结规律</li>
+<li>形成文档</li>
+<li>PDCA：计划=&gt;执行=&gt;复盘=&gt;改正（就这么简单，重在形成思维习惯）</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  My New Hugo Site 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
