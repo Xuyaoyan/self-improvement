@@ -2,313 +2,313 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/</link>
+    <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://xuyaoyan.github.io/mwlkGroup.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://xuyaoyan.github.io/self-improvement.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-03-15/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-03-15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-03-15/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-03-15/</guid>
       <description>任务 GTD Human Reactor 间歇日记 时间 洗漱 早饭 中饭 晚饭 洗漱 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-13/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-13/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-13/</guid>
       <description>任务 Omnifocus 间歇日记 00:01 [[JDBC]] protected修饰符 -&amp;gt; 只能被子类访问，而不能被其他包中的类访问 Object &amp;hellip; args 用来传入可变参数，比如在JDBC中用来传递SQL语句中的参数 Java抛出异常有时候不需要自己try&amp;hellip;catch，因为异常会有默认的报错信息 Java的abstract和interface有什么区别和相同点 抽象类和接口都不能被实例化，只能通过子类继承或实现 抽象类和接口都可以定义规范和约束，但接口更加严格 一个类一次只能继承一个抽象类，但可以实现多个接口 抽象类可以包含成员变量和抽象方法，而接口只能包括常量和抽象方法 抽象类的子类可以选择性的重写父类方法，而接口的实现类必须实现所有接口方法 抽象类可以有构造器，而接口不能有构造器 抽象类的构造器可以让抽象类的变量方便地被子类继承 只要在子类的构造器中使用super(抽象类变量) DML是数据库操作语言Data Manipulation Language的缩写 select，insert，update，delete DQL是数据查询语言Data Query Language的缩写 select等 Map类型不支持反射操作，无法使用实体对象方便地**访问修改对象的属性 使用泛型&amp;lt;T&amp;gt;来传入实体类对象，好处是不需要知道实体类名称 Class&amp;lt;T&amp;gt;是特殊的，是Java中的一个泛型类，用于获取一个类的Class对象 ResultSet的getMetaData()方法用来获取ResultSet对象的元数据，getColumnCount()用来获取元数据里的列数量数据 所以可以这样写int i = res.getMetaData().getColumnCount();，因为调用方法是从左到右依次执行的 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-16/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-16/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-16/</guid>
       <description>任务 Omnifocus 间歇日记 10:51 [[C语言与Linux]] char类型按照无符号数解释还是有符号数解释？ 按照有符号数，范围是-128-127 按照无符号数，范围是0-225 C标准规定这是Impltatmplementation Defined 也就是编译器可以定义char类型是有符号的还是无符号的，哪种效率高就用哪个 这是C标准的Rationale之一：优先考虑效率，而可移植性尚在其次 三种&amp;quot;未明确定义&amp;quot; Implementation-defined C标准没有明确规定，但是编译器要做出明确规定并写在文档中 Unspecified C标准没有明确规定，编译器可以自行决定 Undefined C标准没有明确规定，编译器也没有规定，甚至没有做出错处理，会导致运行时错误 比如数组访问越界就是Undefined 大多数体系结构包括x86平台都是使用 2&amp;rsquo;s Complement 表示法来表示有符号数 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-17/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-17/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-17/</guid>
       <description>任务 Omnifocus 间歇日记 13:48 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-24/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-24/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-24/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-24/</guid>
       <description>任务 Omnifocus 间歇日记 10:58 [[Java]] [[MyBatis]] 快速入门 创建模块，导入坐标 -&amp;gt; 这里指的是创建Maven项目模板 项目模板中的坐标指的是什么呢？ 编写mybatis核心配置文件 -&amp;gt; 替换连接信息，解决硬编码问题 编写SQL映射文件 -&amp;gt; 统一管理sql语句，解决硬编码问题 什么是SQL映射文件？ 感觉像是和xml文件类似，把sql语句放到程序外部读取 编码 定义POJO类 这个类是干什么的？ 应该就是简化JDBC操作的类 错了，这个类是自己定义的，用来存放用户对象 加载核心配置文件，获取SqlSessionFactory对象 这个对象是干什么的？ 应该和数据库的连接有关系 获取SqlSession对象，执行SQL语句 SqlSession又是干什么的？ 应该和SqlSessionFactory有关，可能是它的子类 释放资源 这一步操作是如何简化的？或者说干脆没有简化？ 应该是会把释放连接的代码封装起来 Mapper代理开发 定义接口，映射文件和接口放在同一目录下 设置namespace属性为全限定名 在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值 什么叫保持参数类型和返回值 什么叫sql语句的id 编码 通过SqlSession的getMapper方法获取Mapper接口的代理对象 调用对象方法完成sql执行 包扫描的方式可以更方便的加载sql映射文件 练习：查询所有数据 写Mapper接口 编写SQL语句，写SQL映射文件 执行方法，测试 问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？ 可以查询的时候写上别名 select 变量名 as 别名 可以mapper.xml中设置一个sql标签 resultMap可以灵活地解决这个问题 就是用数据名标映射变量名 再将标签引入statement中 并且可以用resultMap替换resultType 因为resultMap中有type这个属性 练习：查询详情 返回一个对象 所以通过id查找 参数占位符 #{}: 会替换成?，防止sql注入，用于参数传递 ${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况 特殊字符 比如需要判断id &amp;lt; 或 id &amp;gt;，xml并不能识别，因为和标签的符号重合 使用CDATA 练习：多条件查询 第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应 第二种方法：直接在对象当中找相应的变量 但是要求sql中的占位符名称和变量名相同 第三种方法：封装成Map集合的键名 同理sql中的占位符和键名应该相同 练习：动态条件查询 问题，多条件查询只能同时满足多条件才能查询 解决方案1：使用&amp;lt;if&amp;gt;标签来实现 问题，必须满足第一个条件 解决方案2：第一个条件设置为1 = 1满足语法条件，同时其它均为and连接 解决方案3：直接用&amp;lt;where&amp;gt;标签里面放&amp;lt;if&amp;gt;标签，会自动帮你填写1=1，自动帮你删去and 练习：单条件动态查询 使用&amp;lt;choose&amp;gt;标签, 配合&amp;lt;when&amp;gt;标签实现分支选择，必须要有&amp;lt;otherwise&amp;gt;来设置默认值 练习：添加 放在&amp;lt;insert&amp;gt;标签中 问题，如何实现事务 sqlSession.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-25/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-25/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-25/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-25/</guid>
       <description>任务 Omnifocus 间歇日记 15:26 [[Java]] [[Tomcat]] HTTP请求格式 ![[Pasted image 20230525152909.png]] 请求行 GET/HTTP/1.1 请求方式，/表示请求资源路径, HTTP/1.1表示请求协议版本 请求头：第二行开始，格式为key:value 请求体：POST请求的最后一部分，存放请求参数 GET请求的请求参数放在请求行中，而POST的放在请求体中 GET请求参数大小有限制，而POST没有 问题，是不是因为请求行有限制而请求体没有 HTTP响应格式 ![[Pasted image 20230525155502.png]] 响应行 响应数据的第一行 HTTP/1.1 200 OK HTTP/1.1表示协议版本，200 表示响应态码，OK表示状态码描述 响应头 第二行开始，格式为key:value 响应体 最后一部分，存放响应数据 状态码分类 1xx,2xx,3xx,4xx,5xx Servlet生命周期 ![[Pasted image 20230525180000.png]] @WebServlet loadOnStartup属性 负整数：第一次访问才创建Servlet对象 0或正整数：服务器启动就创建对象，数字越小优先级越高 init方法，只有才初始化对象的时候被调用 &amp;hellip; HTTPServlet ![[Pasted image 20230525181124.png]] 开发B/S架构都针对HTTP协议，所以直接继承HTTPServlet就行 根据请求方式的不同重写doGet和doPost方法 可以封装成service方法，在方法中判断请求方式，再进行相应的逻辑处理 Servlet urlPattern配置 ![[Pasted image 20230525182407.png]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-26/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-26/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-26/</guid>
       <description>任务 Omnifocus 间歇日记 17:40 [[Java]] [[JavaWeb]] Response和Request 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-27/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-27/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-27/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-27/</guid>
       <description>任务 Omnifocus 间歇日记 09:04 [[JavaScript]] [[JS_object]] 11:53 [[Vue]] Vue Cli 启动 npm run serve vue ui进入vue项目管理界面 插件 axios 类似Java中的Servlet，把原生的封装成了插件使用 可以更方便的请求和响应 拦截器功能，可以在请求和响应发生前对config进行修改 Vant 为Vue提供组件，十分方便 17:54 [[JavaScript]] [[JS_垃圾回收]] 描述JS的垃圾回收机制，和优化建议 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-28/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-28/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-28/</guid>
       <description>任务 Omnifocus 间歇日记 18:22 [[JavaScript]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-29/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-29/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-29/</guid>
       <description>任务 Omnifocus [[JavaWeb]] Response和Request 要求在一二节听完 现代JS课程Object看一节 ✅ 2023-05-29 C与Linux 新的一节 ✅ 2023-05-29 在三四节看完 ✅ 2023-05-29 吃饭，把快递拿了 ✅ 2023-05-29 把Vue昨天的课听了 中午看完 Web前端课程 课上练习Vue框架 下课回去锻炼身体 吃饭 ✅ 2023-05-29 这个时候差不多6-7点，中间想睡可以睡一觉 Hog把第一节，可以放点音乐 这个时候差不多10点11点 看一节罗杰疑案，力求把剧情搞懂 干一个小时的英语翻译，顺便水水群聊聊天听听歌 间歇日记 09:02 [[JavaWeb]] Request 获取请求数据 String类型参数方法 getMethod(): 获取请求方法 getContextPath(): 获取虚拟目录（项目访问路径） 什么是项目访问路径？什么是虚拟目录 getRequestURL(): 获取URL（统一资源定位符） 什么是统一资源定位符 getRequestURI(): 获取URI（统一资源标识符） 什么是统一资源标识符 getQueryString(): 获取请求参数（GET方式） 11:16 [[JavaScript]] +运算符前置字符串可以将字符串转换为数字 11:33 [[C语言与Linux]] 移位运算 掩码 用来计算位在整数中的位置 异或运算 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-30/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-30/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-30/</guid>
       <description>任务 Omnifocus [[JavaWeb]] Response和Request 起床洗澡晒衣服 早上8点半到10点听完 现代JS课程Object看一节 C与Linux看一节 ✅ 2023-05-30 吃饭 听完Vue的课 买杯咖啡回去喝 回去睡觉 起来吃面包然后锻炼 间歇日记 10:29 [[JavaScript]] Object 对象基础知识 不存在的属性问题 假如一个对象下面的属性的属性访问不到，会报错Error！ 但在实际应用场景中可能是用户没有填写此类信息，我们想得到的应该是undefined 所以需要用&amp;amp;&amp;amp;或者条件运算符?: user.address ? user.address.street : undefined user.address &amp;amp;&amp;amp; user.address.street // undefined 但是这样依然不够优雅，，因为我们只需要知道street的情况，没有必要反复写user.address 可选链 ?.可以用来为该符号之前的属性判断是否存在 如果不存在，也可以读取之后的属性 user?.address // undefined 但是不能滥用，因为只有一些属性是可以不存在的，比如user属性就必须存在 短路效应 如果?.前面的属性不存在，会立刻停止运算（虽然能继续读取） 所以假如接下来有方法也不会执行 ?.() 可以用来检测一个可能你不存在的函数 总结 可选链 ?. 语法有三种形式： obj?.prop —— 如果 obj 存在则返回 obj.prop，否则返回 undefined obj?.[prop] —— 如果 obj 存在则返回 obj[prop]，否则返回 undefined obj.method?.() —— 如果 obj.method 存在则调用 obj.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-31/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-31/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-31/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-05-31/</guid>
       <description>任务 Omnifocus 8:30起床 刷牙洗脸，用洗面奶 刷sm 9:30 带点坚果出门 开始把 间歇日记 11:33 [[JavaScript]] symbol 可以创造对象唯一的key，并可以用一个字符串标识key 即使字符串相同，每个yssymbol创建的key依然唯一 可以直接将symbol作为key来访问数据，而不需要先把它添加到对象中 如果要把symbol写进对象中，需要这样[symbol] symbol不参与forin循环 Object.keys(user)也无法访问到symbol 但是Object.assign 会复制到symobl属性 全局注册表能保证复用标识符相同的symbol，Symbol.for() Symbol.keyfor()可以获取symbol的标识符 还有一些系统Symbol，以后会用到 [[C语言与Linux]] 寄存器、Cache和内存中的数据都是掉电丢失的，这称为易失性存储器（Volatile Memory），与之相对的，硬盘是一种非易失性存储器（Non-volatile Memory）。 除了访问寄存器由程序指令直接控制之外，访问其它存储器都不是由指令直接控制的，有些是硬件自动完成的，有些是操作系统配合硬件完成的。 Cache从内存取数据时会预取一个Cache Line缓存起来，操作系统从硬盘读数据时会预读几个页面缓存起来，都是希望这些数据以后会被程序访问到。大多数程序的行为都具有局部性（Locality）的特点：它们会花费大量的时间反复执行一小段代码（例如循环），或者反复访问一个很小的地址范围中的数据（例如访问一个数组）。所以预读缓存的办法是很有效的：CPU取一条指令，我把和它相邻的指令也都缓存起来，CPU很可能马上就会取到；CPU访问一个数据，我把和它相邻的数据也都缓存起来，CPU很可能马上就会访问到。设想有两台计算机，一台有256KB的Cache，另一台没有Cache，两台计算机的内存都是512MB的，硬盘都是100GB的，虽然多出来256KB的Cache与内存、硬盘的容量相比微不足道，但访问Cache比访问内存、硬盘快几个数量级，由于局部性原理，CPU大部分时间是在和Cache打交道，有Cache的计算机明显会快很多。高速存储器的容量只能做得很小，却能显著提升计算机的性能，这就是Memory Hierarchy的意义所在。 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-01/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-01/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-01/</guid>
       <description>任务 Omnifocus 间歇日记 08:35 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-03/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-03/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-03/</guid>
       <description>任务 Omnifocus 把创业网上报名报了然后填表 间歇日记 15:19 [[JavaScript]] 对象比值更消耗资源(这不是废话吗:() 矛盾 大家希望能够方便的操纵原始类型值，如果能调用方法最好 可是原始类型需要经常使用，如果写成对象会浪费大量资源 解决方案 js允许访问字符串，数字，布尔值的，symbol的方法和属性 提供一个对象包装器，在需要调用方法时将原始类型值包装成对象，使用完再销毁 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-04/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-04/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-04/</guid>
       <description>任务 Omnifocus 做好创业计划书，然后网上报名 间歇日记 09:18 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-05/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-05/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-05/</guid>
       <description>任务 Omnifocus 间歇日记 15:01 [[JavaScript]] 为什么遍历字符串不能用forin循环而是用forof，js不是可以对原始类型自动包装吗？ https://chat.openai.com/share/af56c2dc-20b4-435f-bf6e-96e309a4f92a 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-15/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-06-15/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-06-15/</guid>
       <description>任务 Omnifocus 间歇日记 22:33 随便看点 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-07-05/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-07-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-07-05/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-07-05/</guid>
       <description>任务 Omnifocus 买一个远程服务器，选择阿里或者腾讯 安装ubuntu环境 用ipad的ssh连接这个远程服务器 学习linux与C 进行一些翻译和英语学习 间歇日记 01:11 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-07-19/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-07-19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-07-19/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-07-19/</guid>
       <description>任务 Omnifocus 间歇日记 14:07 [[C语言与Linux]] 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-01/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-01/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-01/</guid>
       <description>任务 Omnifocus 间歇日记 14:59 [[汇编语言]] 效率 开发效率 运行效率 底层：计算机及外围设备的驱动程序 操作系统内核 嵌入式系统 加深对及三日原理喝操作系统等课程的理解 汇编指令本质是机器指令转化成人类易于理解的方式 总线 地址总线 -&amp;gt; 寻址能力 数据总线 -&amp;gt; 传输能力 控制总线 -&amp;gt; 控制能力 CPU对存储器的读写 寻址能力大小 = 内存地址空间 RAM and ROM分配地址空间 统一编址，不考虑器件类型不同 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-03/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-03/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-03/</guid>
       <description>任务 Omnifocus 间歇日记 22:56 [[汇编语言]] 字 存储在16位寄存器当中，也就是两个字节 高位字节存储在高8位寄存器，低位字节存储在低8位寄存器 通用寄存器ax ax是16位寄存器 ah是其高8位寄存器 al是其低8位寄存器 ah，al可以独立运算 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-04/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-04/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-04/</guid>
       <description>任务 Omnifocus 间歇日记 10:58 [[汇编语言]] 用add，mov计算2的4次方 mov ax, 2 add ax, ax 4 add ax, ax 8 add ax, ax 16 物理地址 地址总线是20条，但是寻址总线是16条，怎么解决？ 用两个16位地址合成一个物理地址 段地址 偏移地址 内存分段 基础地址 = 段地址 * 16 偏移地址 逻辑上分段 Debug Debug中有一些命令可以查看内存中的值和语句，并对值进行修改 指令的工作原理 CS:IP 这两个寄存器，一个保存代码段地址，一个保存偏移地址 从CS:IP 指向内存单元读取指令，指令进入指令缓冲器 IP=IP + 所读取指令的长度，以便指向下一条指令 执行指令，然后重复操作 如何判断数据是用作一般数据还是指令？ CS:IP指向的 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-13/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-13/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-13/</guid>
       <description>任务 Omnifocus 间歇日记 15:27 [[汇编语言]] 总结 我需要总结哪些内容？ 计算机的组成，重点是CPU和其他设备的交互以及存储问题，如逻辑存储器，为什么会分段等 内存总线和地址总线，如何判断内存空间大小，和寻址空间有什么关系 了解寄存器和数据存储的方式，如寄存器是如何存储数据的，如何判断是内存还是数据，是从地址高位开始存储还是地位开始，寄存器的大小是多少 mov和add指令的作用 物理地址的表示方法，内存分段的方法和作用 Debug的使用，了解常用命令 CS:IP在代码段中的作用 jmp指令的作用 内存中字的存储 DS和[address] 栈的原理和对应的操作 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-22/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-22/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-22/</guid>
       <description>任务 Omnifocus 间歇日记 17:22 如果有人反驳奥地利经济学派，我该如何让他思考？ 我说投 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-28/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-28/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-28/</guid>
       <description>任务 Omnifocus 间歇日记 23:22 规划下明天的任务 上午 吃早饭，两个包子一个鸡蛋一杯豆浆 锻炼腹肌直到力竭 整理客厅，把不要的东西放一边 下午 把餐具洗了 整理冰箱 买菜，买肉回来炖着，然后锻炼，锻炼完吃 晚上 做饭，碳水就吃面包，菜的话做点肉做点蔬菜，西红柿，鸡蛋啥的 拖地 锻炼 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-30/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-30/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-30/</guid>
       <description>任务 Omnifocus 间歇日记 22:58 明天任务 把东西全清了，该洗洗该扔扔 拖地 天气好就晒沙发垫 去换眼镜 然后考虑下回校操作 先把最重要的带回去 电子设备 电脑，手机，耳机，充电线，手环，ipad，鼠标 仪容 洗面奶，衣服 眼睛水 前两周多回来练练车整理家里 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-31/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-31/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-08-31/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-08-31/</guid>
       <description>任务 Omnifocus 间歇日记 23:47 明天拖地 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-02/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-02/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-02/</guid>
       <description>任务 Omnifocus 间歇日记 18:10 9月规划 5号之前把个人网站搭建起来 两周内听完汇编语言课，并做好笔记 4周内听完cs61a，并做好笔记 这4周高强度练习英语，要求每天3小时听力3小时阅读1小时背单词 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-05/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-05/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-05/</guid>
       <description>任务 Omnifocus 完成个人网站搭建 间歇日记 13:34 尝试使用hugo制作静态页面在本地运行 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-08/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-08/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-08/</guid>
       <description>任务 Omnifocus 间歇日记 11:53 规划下今天的活动 吃饭，然后去买菜买纸巾 回来开始做cs61b 吃晚饭 锻炼 英语 19:25 [[Python]] 整数型除法 // nonlocal 表示该变量是外部函数变量，不是该嵌套函数的本地变量 assert 断言，给出一个条件判断，后面跟一个报错语句 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-11/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-11/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-11/</guid>
       <description>任务 Omnifocus 间歇日记 00:29 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-12/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-12/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-12/</guid>
       <description>任务 Omnifocus 间歇日记 00:43 看完汇编语言第三章 写完骰子程序 有时间再学下计算机网络 英语 22:04 复盘，看英语 23:05 明日计划 完成骰子程序 周末计划：看看能不能找个翻译组加入，锻炼下英文翻译能力，然后 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 学习了汇编语言第三章，下午开始的 优化的地方是要优先把任务完成再去干其他的，因为打游戏导致今天没写完骰子程序 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 第三章粗略地学了以下，还不错 把事情分为可控, 半可控, 不可控, 分析原因总结规律 可控：打游戏 半可控：吃饭，学习效率，起床时间 不可控：无 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-16/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-09-16/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/daily-note/2023-09-16/</guid>
       <description>任务 Omnifocus 间歇日记 17:07 今天明天把Java CS61B的Week 2 听完 今天把汇编第四章看完 今晚或者明天来制卡 复盘 今天干了些什么? 是怎么去干的? 有没有能优化的地方? 这些事情的结果是什么? 为什么这些事情能够再优化, 是因为哪些地方做的不好? 把事情分为可控, 半可控, 不可控, 分析原因总结规律 形成文档 PDCA：计划=&amp;gt;执行=&amp;gt;复盘=&amp;gt;改正（就这么简单，重在形成思维习惯） </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/outputs/2023-05-04/</link>
+      <link>https://xuyaoyan.github.io/self-improvement.github.io/posts/outputs/2023-05-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://xuyaoyan.github.io/mwlkGroup.github.io/posts/outputs/2023-05-04/</guid>
+      <guid>https://xuyaoyan.github.io/self-improvement.github.io/posts/outputs/2023-05-04/</guid>
       <description></description>
     </item>
     
