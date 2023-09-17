@@ -16,7 +16,7 @@
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+<link rel="stylesheet" href="/mwlkGroup.github.io/ananke/css/main.min.css" >
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:title" content="" />
 <meta property="og:description" content="任务 Omnifocus 间歇日记 10:58 [[Java]] [[MyBatis]] 快速入门 创建模块，导入坐标 -&gt; 这里指的是创建Maven项目模板 项目模板中的坐标指的是什么呢？ 编写mybatis核心配置文件 -&gt; 替换连接信息，解决硬编码问题 编写SQL映射文件 -&gt; 统一管理sql语句，解决硬编码问题 什么是SQL映射文件？ 感觉像是和xml文件类似，把sql语句放到程序外部读取 编码 定义POJO类 这个类是干什么的？ 应该就是简化JDBC操作的类 错了，这个类是自己定义的，用来存放用户对象 加载核心配置文件，获取SqlSessionFactory对象 这个对象是干什么的？ 应该和数据库的连接有关系 获取SqlSession对象，执行SQL语句 SqlSession又是干什么的？ 应该和SqlSessionFactory有关，可能是它的子类 释放资源 这一步操作是如何简化的？或者说干脆没有简化？ 应该是会把释放连接的代码封装起来 Mapper代理开发 定义接口，映射文件和接口放在同一目录下 设置namespace属性为全限定名 在Mapper接口中定义方法，方法名就是SQL映射文件中sql语句的id，并保持参数类型和返回值 什么叫保持参数类型和返回值 什么叫sql语句的id 编码 通过SqlSession的getMapper方法获取Mapper接口的代理对象 调用对象方法完成sql执行 包扫描的方式可以更方便的加载sql映射文件 练习：查询所有数据 写Mapper接口 编写SQL语句，写SQL映射文件 执行方法，测试 问题出现，如果数据表中的数据和实体类中的变量名不相符怎么办？ 可以查询的时候写上别名 select 变量名 as 别名 可以mapper.xml中设置一个sql标签 resultMap可以灵活地解决这个问题 就是用数据名标映射变量名 再将标签引入statement中 并且可以用resultMap替换resultType 因为resultMap中有type这个属性 练习：查询详情 返回一个对象 所以通过id查找 参数占位符 #{}: 会替换成?，防止sql注入，用于参数传递 ${}: 拼接sql，会有sql注入问题，用于表名或类名不固定情况 特殊字符 比如需要判断id &lt; 或 id &gt;，xml并不能识别，因为和标签的符号重合 使用CDATA 练习：多条件查询 第一种方法：需要使用注解 @Param 来帮忙标注Mapper接口方法的参数，以便和xml中的sql语句里的查询条件对应 第二种方法：直接在对象当中找相应的变量 但是要求sql中的占位符名称和变量名相同 第三种方法：封装成Map集合的键名 同理sql中的占位符和键名应该相同 练习：动态条件查询 问题，多条件查询只能同时满足多条件才能查询 解决方案1：使用&lt;if&gt;标签来实现 问题，必须满足第一个条件 解决方案2：第一个条件设置为1 = 1满足语法条件，同时其它均为and连接 解决方案3：直接用&lt;where&gt;标签里面放&lt;if&gt;标签，会自动帮你填写1=1，自动帮你删去and 练习：单条件动态查询 使用&lt;choose&gt;标签, 配合&lt;when&gt;标签实现分支选择，必须要有&lt;otherwise&gt;来设置默认值 练习：添加 放在&lt;insert&gt;标签中 问题，如何实现事务 sqlSession." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/daily-note/2023-05-24/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://xuyaoyan.github.io/mwlkGroup.github.io/posts/daily-note/2023-05-24/" /><meta property="article:section" content="posts" />
 
 
 <meta itemprop="name" content="">
@@ -56,7 +56,7 @@
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+    <a href="/mwlkGroup.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
       
         My New Hugo Site
       
@@ -380,7 +380,7 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://xuyaoyan.github.io/mwlkGroup.github.io/" >
     &copy;  My New Hugo Site 2023 
   </a>
     <div>
